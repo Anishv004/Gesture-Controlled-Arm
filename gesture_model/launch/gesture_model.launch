@@ -1,0 +1,19 @@
+<launch>
+
+    <!-- Launch the webcam node -->
+    <node pkg="gesture_model" type="webcam.py" name="webcam_node" output="screen">
+      <!-- Add any arguments if required -->
+    </node>
+  
+    <!-- Launch the model processing node -->
+    <node pkg="gesture_model" type="model_processing.py" name="model_processing_node" output="screen">
+      <!-- Add any arguments if required -->
+    </node>
+  
+    <!-- Launch the Arduino publisher node -->
+    <node pkg="gesture_model" type="pub_arduino.py" name="pub_arduino_node" output="screen">
+      <!-- Add any arguments if required -->
+    </node>
+  
+</launch>
+  
